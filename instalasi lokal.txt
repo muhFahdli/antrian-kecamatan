@@ -1,0 +1,4 @@
+1.ekstrak database
+2.buka file konfigurasi di folder app/base/const, ubah const dari URL menjadi 
+  http://localhost/antrian/public (jika aplikasi local xampp belum dilakukan konfigirasi tambahan)
+3.jalankan aplikasi dilocal

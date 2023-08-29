@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.logo {
+	width: 40px;
+	height: 40px;
+}
+.main {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(30, 120, 40, 0.6);
+}
+
+.main::before {
+	content: "";
+	background-image: url('../img/nja.jpg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* Menempatkan lapisan di belakang teks */
+}
+.abu ,.note,.welcome{
+	color: whitesmoke;
+	text-shadow: 1.2px 1.2px 2px rgba(255, 215, 0, 0.5);;
+}
+.note {
+	display: flex;
+	justify-content: center;
+}
+.pe {
+	font-size: 20px;
+	font-weight: 500;
+}
+.hitam {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 1.2px 1.2px 2px rgba(255, 215, 250, 0.5);;
+}
+.buka {
+	color: red;
+	font-size: 40px;
+}
+.kategori {
+	background-color: rgba(130, 120, 140, 0.6);
+}
+.kategori::before {
+	content: "";
+	background-image: url('../img/layanan.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* Menempatkan lapisan di belakang teks */
+}
+.keterangan {
+	font-size: 12px;
+	font-style: italic;
+}
+.keterangan span {
+	color: red;
+	font-style: 40px;
+}
+
+
+/* Untuk font ukuran besar pada perangkat besar */
+.buka {
+	font-size: 5rem; /* Atur sesuai kebutuhan */
+}
+/* Font responsif menggunakan vw */
+.abu, .note, .hitam {
+	font-size: 2vw; /* Ukuran font akan menjadi 2% dari lebar layar */
+}
+/* Ukuran font pada keterangan */
+.keterangan {
+	font-size: 1rem;
+}
+
+/* Untuk font ukuran kecil pada perangkat kecil */
+@media (max-width: 768px) {
+	.logo {
+		width: 25px;
+		height: 25px;
+	}
+	.fs-1 {
+		font-size: 3rem; /* Ukuran font lebih kecil pada perangkat dengan lebar layar <= 768px */
+	}
+	.abu, .note, .hitam {
+		font-size: 3vw; /* Ukuran font menjadi 3% dari lebar layar pada perangkat dengan lebar layar <= 768px */
+	}
+	.keterangan {
+		font-size: 0.8rem; /* Ukuran font lebih kecil pada perangkat dengan lebar layar <= 768px */
+	}
+	.main {
+		height: 100%;
+	}
+	.pe {
+		font-size: 12px;
+	}
+}
+
+
+
+
